@@ -14,7 +14,11 @@
                     "jimjyang.github.io/showroom"
                 );
                 document.getElementById("body").innerHTML = "testredirect has been permanently moved!<br/><br/>Redirecting to " + redirectLocation + " ...";
-                window.location.href = redirectLocation;
+                
+                let tID = setTimeout(function () {
+                    window.location.href = redirectLocation;
+                    window.clearTimeout(tID);		// clear time out.
+                }, 5000);
             }
         }
     </script>
