@@ -1,0 +1,3 @@
+# testredirect
+
+To test redirect
