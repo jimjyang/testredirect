@@ -13,12 +13,12 @@
                     "jimjyang.github.io/testredirect",
                     "jimjyang.github.io/showroom"
                 );
-                document.getElementById("body").innerHTML = "testredirect has been permanently moved!<br/><br/>Redirecting to " + redirectLocation + " ...";
+                document.getElementById("body").innerHTML = "This site has been permanently moved!<br/><br/>Redirecting to " + redirectLocation + " ...";
                 
                 let tID = setTimeout(function () {
                     window.location.href = redirectLocation;
                     window.clearTimeout(tID);		// clear time out.
-                }, 10000);
+                }, 8000);
             }
         }
     </script>
